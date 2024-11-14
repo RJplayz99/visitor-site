@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Login | A2 Enterprises</title>
+      <link rel="icon" type="image/x-icon" href="A2 Logo.ico">
+      <link rel="stylesheet" href="style.css">
+      <div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="https://bit.ly/A2-bettabytes">Betta Bytes</a>
+  <a href="contact.html">Contact</a>
+  <a class="active" href="login.html">Login</a>
+</div>
+      <script>
+  function checkPassword() {
+   var password = document.getElementById("passwordBox");
+   var passwordText = password.value;
+   if(passwordText == "A2isBEST") {
+    return true;
+   }
+   alert("Access denied! Incorrect password!");
+   return false;
+  }
+ </script>
+    </head>
+    <body>
+      <p> </p>
+      <p> </p>
+      <center>
+      <table>
+        <tr>
+          <td>
+            <img src="A2 Logo.png" height=75 width=75>
+          </td>
+          <td>
+            <h1>A2 Enterprises</h1>
+          </td>
+        </tr>
+      </table>
+        <h1>Login</h1>
+        <p>Username:</p>
+        <input id="userBox" type="text" placeholder="Username:">
+        <p>Password:</p>
+        <input id="passwordBox" type="password" placeholder="Password:">
+        <br>
+        <button onclick="return checkPassword;" data-="">Login</button>
+      </center>
+    </body>
+  </html>
